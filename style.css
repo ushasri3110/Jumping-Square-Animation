@@ -1,0 +1,121 @@
+html{
+    font-size: 62.5%;
+}
+.container{
+    width:100%;
+    height:100vh;
+    display: grid;
+    place-items: center;
+}
+.wrapper{
+    width:50rem;
+    height:40rem;
+    background-color: rgb(3, 39, 61);
+    border-radius: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+.stick{
+    width:1rem;
+    height:20rem;
+    background-color: coral;
+    border-radius: 2rem;
+    transform-origin: bottom center;
+}
+.left-stick{
+    position: absolute;
+    bottom: 0;
+    left:10rem;
+    animation:leftAnimation 2s infinite linear;
+}
+@keyframes leftAnimation{
+    0%,
+    30%{
+        transform: rotateZ(0);
+    }
+    63%{
+        transform: rotateZ(2deg);
+    }
+    64%{
+        transform: rotateZ(0);
+    }
+}
+.right-stick{
+    position:absolute;
+    bottom:0;
+    right:10rem;
+    animation:rightAnimation 2s infinite linear;
+}
+@keyframes rightAnimation{
+    0%,
+    30%{
+        transform: rotateZ(0);
+    }
+    63%{
+        transform: rotateZ(-2deg);
+    }
+    64%{
+        transform: rotateZ(0);
+    }
+}
+.rubber{
+    height:20rem;
+    width:30rem;
+    position:absolute;
+    left:10rem;
+    bottom:10rem;
+    border-bottom: 1rem solid coral;
+    animation:rubberAnimation 2s infinite linear;
+}
+@keyframes rubberAnimation{
+    0%,
+    20%{
+        border-radius: 0;
+        transform: translateY(0);
+    }
+    50%,
+    60%{
+        border-radius:0 0 32rem 32rem;
+        transform: translateY(10rem);
+    }
+    65%,
+    100%{
+        border-radius: 0;
+        transform: translateY(0);
+    }
+}
+.square{
+    background-color: white;
+    width: 8rem;
+    height:8rem;
+    border-radius: 1rem;
+    position:absolute;
+    left:21rem;
+    animation:squareAnimation 2s infinite linear;
+}
+@keyframes squareAnimation {
+    0%{
+        transform: translateY(5rem);
+    }
+    20%{
+        transform: translateY(10rem);
+    }
+    40%{
+        transform: translateY(20rem);
+    }
+    50%,
+    63%{
+        transform: translateY(30.5rem);
+    }
+    65%{
+        transform: translateY(25rem);
+    }
+    80%{
+        transform: translateY(15rem)
+        rotateZ(90deg);
+    }
+    100%{
+        transform: translateY(5rem)
+        rotateZ(90deg);
+    }
+}
