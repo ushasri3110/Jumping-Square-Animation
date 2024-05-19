@@ -12,7 +12,7 @@ A simple animation project that features a square jumping with accompanying anim
 
 ## Demo
 
-You can view a live demo of the project [here](#). (Replace `#` with the URL to your live demo if available.)
+https://github.com/ushasri3110/Jumping-Square-Animation/assets/144483101/b5ae38f9-926c-4642-9ddf-f7f3d4fe88e3
 
 ## Installation
 
